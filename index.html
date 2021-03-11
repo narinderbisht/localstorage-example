@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Task Management</title>
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1 class="page-heading">My Task Board</h1>
+			<div class="task-form">
+				<form method="post" id="taskGenerate">
+					<div class="form-field">
+						<label for="taskName">Task Name</label>
+						<input type="text" name="taskName" id="taskName" required="true">
+					</div>
+					<div class="form-field">
+						<label for="taskName">Task Time</label>
+						<input type="text" name="taskTime" id="taskTime" required="true">
+					</div>
+					<div class="form-field">
+						<label for="taskDescription">Task Description</label>
+						<textarea name="taskDescription" id="taskDescription" required="true"></textarea>
+					</div>
+					<div class="form-field">
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="task-list-wrapper">
+				<ul id="taskList"class="task-list-items">
+				</ul>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
